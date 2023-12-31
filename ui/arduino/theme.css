@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
 
 :root {
-  --teal: #008184;
+  /* --teal: #008184; */
+  --teal: transparent;
   --light-teal: #ecf1f1;
   --white: rgb(255, 255, 255);
   --white-faded: rgba(255, 255, 255, 0.8);
@@ -15,7 +16,9 @@
   font-family: 'Roboto Mono', monospace;
 }
 
+
 body {
+  background-color: #2e3440;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -165,10 +168,14 @@ img {
   background: var(--color-4);
 }
 .editor-filename img {
+  background: var(--white-faded);
   max-height: 100%;
   padding: 0.5rem;
 }
 .editor-filename input {
+  margin-left: .5rem;
+  color: var(--white);
+  background-color: var(--teal);
   width: 100%;
   border: none;
 }
